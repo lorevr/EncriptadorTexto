@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sriracha&family=Vast+Shadow&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logoAluraAzulClaro.png" alt="">
+        <p class="titulo">Encriptador de Texto</p>
+    </header>
+    
+    <main>
+        <section class="encriptar">
+            <textarea type="text" class="input-text" placeholder="Ingrese el texto aquí" cols="40" rows="6"></textarea>
+            <div class="letrasMinusculas">
+                <img src="imagenes/VectorAzul.png" alt="">
+                <h6>Sólo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button type="button" onclick="btnEncriptar()" class="botonEncr">Encriptar</button>
+                <button type="button" onclick="btnDesencriptar()" class="botonDesencr">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="msgDesencrip">
+            <textarea type="text" class="output-text"  cols="18" rows="8"></textarea>
+            <img src="imagenes/Muñeco.svg" alt="" class="munecoBusca">
+            <h3 class="ningunMensaje">Ningún mensaje fue encontrado</h3>
+            <h5 class="ingresaTexto">Ingresa el texto que deseas encriptar o desencriptar</h5>
+            <button type="button" onclick="copiarEnPortapapeles()" class="botonCopiar">Copiar</button>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p class="pieCopyright">Todos los derechos reservados Lorena Valencia Ruiz &copy 2022</p>
+        <p class="textoPieChallenge">Challenge 1</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

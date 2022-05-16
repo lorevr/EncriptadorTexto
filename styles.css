@@ -1,0 +1,233 @@
+body {
+    background-color: #141e28;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    justify-items: center;
+    background-color: #0A3871;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.titulo {
+    color: #D8DFE8;
+    font-family:  'Vast Shadow', cursive;
+    font-size: 50px;
+    font-weight: 400;
+    margin: 10px;
+}
+
+main {
+    background-image: url('imagenes/encriptar-telefono-movil.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.encriptar {
+    display: grid;
+    grid-template-rows: 9.8fr 0.1fr 1.3fr;
+    justify-items: center;
+}
+
+
+
+.input-text {
+    width: 90%;
+    height: 95%;
+    align-self: center;
+    background-color: transparent;
+    border: transparent;
+    color: #FFFFFF;
+
+    font-family: 'Sriracha', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 48px;  
+}
+
+.input-text:focus {
+    background-color: #141e28;
+}
+
+::placeholder {
+    color: #4f4f4f;
+    text-align: center;
+    background-color: #65b8d8;
+    opacity: 0.7;
+}
+
+.letrasMinusculas {
+    display: grid;
+    grid-template-columns: 1fr 11fr;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #7fe0f1;
+    margin-bottom: 6px;
+    justify-self: start;
+    margin-left: 20%;
+    align-items: center;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: top;
+    justify-content: center;
+}
+
+.encriptar button {
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 19px;
+    text-align: center;
+}
+
+.botonEncr {
+    background-color: #7fe0f1;
+    color: #0A3871;
+    margin-right: 10px;
+}
+
+.botonEncr:hover {
+    background-color: #0A3871;
+    color: #7fe0f1;
+}
+
+.botonDesencr {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    margin-left: 10px;
+}
+
+.botonDesencr:hover {
+    background-color: #0A3871;
+    color: #7fe0f1;
+}
+
+.msgDesencrip {
+    display: grid;
+    grid-template-rows: 60% 10% 20% 10%;
+    width: 90%;
+    height: 700px;
+    padding: 10px;
+    background: #65b8d8;
+    box-shadow: 5px 5px 2px rgb(82, 82, 82);
+    /* box-shadow: 10px 15px 32px -18px rgba(231, 251, 255, 0.8); */
+    border-radius: 32px;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    position: relative;
+}
+
+.output-text {
+    background: transparent;
+    position: absolute;
+    width: 90%;
+    height: 75%;
+    align-self: center;
+    justify-self: center;
+    border: transparent;
+
+    font-family: 'Sriracha', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    z-index: 10;
+
+}
+
+.output-text:focus {
+    border:transparent;
+}
+
+.msgDesencrip img {
+    width: 90%;
+    height: 90%;
+}
+
+h3 {
+    width: 336px;
+    height: 58px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    margin: auto;
+    color: #343A40;
+}
+
+h5 {
+    width: 336px;
+    height: 58px;
+    font-size: 16px;
+    line-height: 150%;
+    margin: auto;
+    color: #495057;
+}
+
+.botonCopiar {
+    background-color: #D8DFE8;
+    /* border: 1px solid #fdfdfd; */
+    color: #0A3871;
+    margin-left: 10px;
+    border-radius: 24px;
+    width: 228px;
+    height: 47px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 19px;
+    text-align: center;
+    justify-self: center;
+    opacity: 0;
+    z-index: 11;
+}
+
+.botonCopiar:hover {
+    background-color: #0A3871;
+    color: #7fe0f1;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    font-size: 18px;
+    background-color: #0A3871;
+    text-align: center;
+    max-width: 1440px;
+    margin: auto;
+    color: #7fe0f1;
+}
+
+.pieCopyright {
+    font-size: 13px;
+}
+
+.textoPieChallenge {
+    font-size: 16px;
+    text-align: end;
+    margin-right: 10px;
+}
