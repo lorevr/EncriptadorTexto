@@ -236,6 +236,10 @@ footer {
 
 
 @media (max-width: 768px){
+    header {
+        padding: 0 10px;
+    }
+
     main {
         background-image: url('imagenes/encriptar-telefono.jpg');
         background-repeat: no-repeat;
@@ -261,8 +265,17 @@ footer {
         align-items: center;
     }
 
+    .letrasMinusculas h6 {
+        /* color: #000; */
+        text-shadow: -1px 1px 0 #0a0e27, -2px 2px 0 #0a0e27, 2px -1px 7px #0a0e27;
+    }
+
     .encriptar {
-        grid-template-rows: 2fr 0.1fr 0.5fr;
+        grid-template-rows: 0.8fr 0.1fr 0.2fr;
+    }
+
+    .botones {
+        width: 90%;
     }
 
     .encriptar button {
@@ -275,13 +288,18 @@ footer {
     }
 
     .msgDesencrip {
-        grid-template-rows: 30% 10% 20% 10%;
+        grid-template-rows: 70% 5% 25%;
         height: 300px;
         align-content: space-around;
+        margin-top: 0;
     }
 
     .output-text {
         font-size: 25px;
+    }
+
+    .ningunMensaje {
+        font-size: 1.4rem;
     }
 }
 
@@ -293,6 +311,11 @@ footer {
     footer {
         grid-template-columns: auto;
         font-size: 1rem;
+        /* line-height: 3; */
+    }
+
+    footer p {
+        line-height: 2;
     }
 
     .textoPieChallenge {
