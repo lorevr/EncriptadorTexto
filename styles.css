@@ -22,6 +22,7 @@ header {
     font-size: 50px;
     font-weight: 400;
     margin: 10px;
+    text-align: center;
 }
 
 main {
@@ -30,6 +31,7 @@ main {
     background-size: cover;
     display: grid;
     grid-template-columns: 9fr 3fr;
+    width: 100%;
     max-width: 1440px;
     margin: auto;
 }
@@ -39,8 +41,6 @@ main {
     grid-template-rows: 9.8fr 0.1fr 1.3fr;
     justify-items: center;
 }
-
-
 
 .input-text {
     width: 90%;
@@ -84,15 +84,16 @@ main {
 }
 
 .botones {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
     align-items: top;
     justify-content: center;
+    width: 100%;
 }
 
 .encriptar button {
     border-radius: 24px;
-    width: 328px;
+    width: 80%;
+    max-width: 328px;
     height: 67px;
     font-family: 'Inter';
     font-style: normal;
@@ -132,11 +133,14 @@ main {
     padding: 10px;
     background: #65b8d8;
     box-shadow: 5px 5px 2px rgb(82, 82, 82);
-    /* box-shadow: 10px 15px 32px -18px rgba(231, 251, 255, 0.8); */
     border-radius: 32px;
     text-align: center;
     margin: 20px auto 20px auto;
     position: relative;
+}
+
+.munecoBusca {
+    width: 80%;
 }
 
 .output-text {
@@ -154,7 +158,6 @@ main {
     font-size: 40px;
     line-height: 48px;
     z-index: 10;
-
 }
 
 .output-text:focus {
@@ -189,7 +192,6 @@ h5 {
 
 .botonCopiar {
     background-color: #D8DFE8;
-    /* border: 1px solid #fdfdfd; */
     color: #0A3871;
     margin-left: 10px;
     border-radius: 24px;
@@ -230,4 +232,71 @@ footer {
     font-size: 16px;
     text-align: end;
     margin-right: 10px;
+}
+
+
+@media (max-width: 768px){
+    main {
+        background-image: url('imagenes/encriptar-telefono.jpg');
+        background-repeat: no-repeat;
+        grid-template-columns: auto;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .input-text {
+        font-size: 25px; 
+    }
+
+    .letrasMinusculas {
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+        justify-self: start;
+        margin-left: 20px;
+        align-items: center;
+    }
+
+    .encriptar {
+        grid-template-rows: 2fr 0.1fr 0.5fr;
+    }
+
+    .encriptar button {
+        height: 47px;
+        font-size: 22px;
+    }
+
+    .munecoBusca {
+        display: none;
+    }
+
+    .msgDesencrip {
+        grid-template-rows: 30% 10% 20% 10%;
+        height: 300px;
+        align-content: space-around;
+    }
+
+    .output-text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 520px){
+    .msgDesencrip {
+        height: 200px;
+    }
+
+    footer {
+        grid-template-columns: auto;
+        font-size: 1rem;
+    }
+
+    .textoPieChallenge {
+        text-align: center;
+        margin: 0;
+    }
 }
